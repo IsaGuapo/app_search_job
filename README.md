@@ -23,7 +23,7 @@ Instalar paquetes en el proyecto con npm i:
 (Nos permite instalar los paquetes que alberga nuestro archivo package.json.)
 
 
-Proyecto intermeio grupal en The Bridge.
+Proyecto intermedio grupal en The Bridge.
 Autores:
 Isa Guapo
 Gustavo Tremont
