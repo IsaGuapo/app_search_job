@@ -1,4 +1,4 @@
-# project_template# app_search_job
+app_search_job
 
 Descripción:
 Aplicación  web de búsqueda y gestión de ofertas laborales en España. 
