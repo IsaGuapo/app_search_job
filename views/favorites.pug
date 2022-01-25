@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Favoritos
+        link(rel="stylesheet", href="/css/styles.css")
+        link(rel="stylesheet", href="/css/normalize.css")
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    body 
+        include ./header
+        
+
+        h2 Lista de Favoritos
+        section.user-favorites 
+            each fav in favorites
+                article.favorite-info#target.scraping
+                    p Puesto: #{fav.favorite_title}
+                    p Compañia: #{fav.favorite_companyname}
+                    p URL: #{fav.favorite_url}
+                    p Descripción: #{fav.favorite_description}
+                    p Salario: #{fav.favorite_salary}
+                    p localización: #{fav.favorite_location}
+                    form(action=`/api/favorite/?_method=DELETE&favorite=${fav.favorite_id}`, method="post")
+                        input#btnSignup(type="submit", value="Borrar de favotiros")
+                
+
+        script(src="/js/dropdown_menu.js")

@@ -1,0 +1,28 @@
+header 
+    nav.navbar
+        section.container
+            img.logo(src='/assets/images/logo.png')
+            //- h1.titleJob Jobing
+
+        section#myMenu.dropdown 
+            span#buttonX(href="javascript: void(0)") &times;
+            div.dropdown-list
+                a(href="/") Home
+                case role 
+                    when 2
+                        a(href="/favorites") Favorites
+                        a(href="/profile") Profile 
+                        form#logout(action="/api/logout", method="post") 
+                            a(href="javascript:{ document.getElementById('logout').submit();}") Logout
+                    when 1
+                        a(href="/dashboard") Dashboard
+                        a(href="/user") Users 
+                        a(href="/profile") Profile
+                        form#logout(action="/api/logout", method="post") 
+                            a(href="javascript:{ document.getElementById('logout').submit();}") Logout
+                    default     
+                        a(href="/signup") Sign Up
+                        a(href="/login") Login
+                
+        span#hamburger &#9776;
+            
