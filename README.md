@@ -2,6 +2,7 @@ APP JOBING
 
 Descripción:
   Aplicación  web de búsqueda y gestión de ofertas laborales en España. 
+  Realizada con vistas en PUG
 
 Datos de interés sobre la app:
   La app tiene dos roles distintos: Usuario y Administrador. Las funcionalidades que aparecen tanto en el panel de control como en el resto de endpoints varían dependiendo del   tipo de usuario, no pudiendo nunca acceder a aquellas zonas o contenidos que no le corresponden.
